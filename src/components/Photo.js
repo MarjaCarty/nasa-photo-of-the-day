@@ -23,7 +23,9 @@ export default function Photo() {
       <div>
         <img src={URL} />
       </div>
-      <p>{explanation}</p>
+      <div>
+        <p>{explanation}</p>
+      </div>
     </div>
   );
 }
