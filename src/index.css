@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +7,68 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/body-01.png");
+  background-repeat: repeat-x;
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.Header {
+  background-image: url("./assets/header-01.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 11%;
+}
+
+.Header h1,
+.Header h3 {
+  font-family: "Cinzel Decorative";
+  text-align: center;
+  color: #ffe0b5;
+  margin: 0;
+  position: relative;
+  bottom: 40px;
+}
+
+.Header h1 {
+  font-size: 8rem;
+}
+
+.Header h3 {
+  font-size: 4rem;
+}
+
+.Photo {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Photo img {
+  border: 5px solid #171738;
+  border-radius: 20px;
+  margin: 7% 0;
+  padding: 1%;
+}
+
+.Photo p {
+  width: 60%;
+  margin-bottom: 5%;
+  color: #ffe0b5;
+}
+
+.Footer {
+  background-color: #171738;
+  width: 100%;
+  text-align: center;
+}
+
+.Footer i {
+  color: #ffe0b5;
+  padding: 3%;
 }
