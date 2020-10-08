@@ -5,8 +5,14 @@ import img from "../assets/header-01.png";
 const StyledHeader = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 11%;
+  background-size: cover;
+  background-position: center;
+  padding: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15%;
 
   h1,
   h3 {
@@ -15,15 +21,14 @@ const StyledHeader = styled.div`
     color: #ffe0b5;
     margin: 0;
     position: relative;
-    bottom: 40px;
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 7vw;
   }
 
   h3 {
-    font-size: 4rem;
+    font-size: 3vw;
   }
 `;
 
