@@ -16,39 +16,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.Photo {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Photo img {
-  border: 5px solid #171738;
-  border-radius: 20px;
-  margin: 7% 0;
-  padding: 1%;
-  width: 100%;
-}
-
-.Photo p {
-  width: 60%;
-  color: #ffe0b5;
-  text-align: center;
-  background-color: #171738;
-  border-radius: 20px;
-  padding: 2%;
-  margin: 0 auto 5% auto;
-}
-
-.Footer {
-  background-color: #171738;
-  width: 100%;
-  text-align: center;
-}
-
-.Footer i {
-  color: #ffe0b5;
-  padding: 3%;
-}
