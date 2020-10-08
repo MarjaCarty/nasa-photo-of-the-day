@@ -17,31 +17,6 @@ code {
     monospace;
 }
 
-.Header {
-  background-image: url("./assets/header-01.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 11%;
-}
-
-.Header h1,
-.Header h3 {
-  font-family: "Cinzel Decorative";
-  text-align: center;
-  color: #ffe0b5;
-  margin: 0;
-  position: relative;
-  bottom: 40px;
-}
-
-.Header h1 {
-  font-size: 8rem;
-}
-
-.Header h3 {
-  font-size: 4rem;
-}
-
 .Photo {
   width: 100vw;
   display: flex;
