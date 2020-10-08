@@ -6,6 +6,7 @@ const StyledPhoto = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   img {
@@ -13,7 +14,7 @@ const StyledPhoto = styled.div`
     border-radius: 20px;
     margin: 7% 0;
     padding: 1%;
-    width: 100%;
+    width: 60vw;
   }
 
   p {
