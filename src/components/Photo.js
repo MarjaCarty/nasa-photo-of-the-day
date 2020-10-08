@@ -23,14 +23,28 @@ const StyledPhoto = styled.div`
     text-align: center;
     background-color: #171738;
     border-radius: 20px;
-    padding: 2%;
-    margin: 0 auto 5% auto;
+    padding: 3%;
+    margin: 0 auto 3% auto;
+  }
+
+  .innerP {
+    margin: 0;
+    padding: 0 0 2%;
+    font-weight: bold;
+    width: 100%;
+    font-size: 2rem;
+
+    @media (max-width: 550px) {
+      font-size: 1rem;
+    }
   }
 `;
 
 export default function Photo() {
   const [URL, setURL] = useState("");
   const [explanation, setExplanation] = useState("");
+  const [date, setDate] = useState();
+  const [title, setTitle] = useState();
 
   useEffect(() => {
     axios
@@ -40,8 +54,12 @@ export default function Photo() {
       .then((res) => {
         const imageUrl = res.data.url;
         const imageExp = res.data.explanation;
+        const imageDate = res.data.date;
+        const imageTitle = res.data.title;
         setURL(imageUrl);
         setExplanation(imageExp);
+        setDate(imageDate);
+        setTitle(imageTitle);
       });
   });
 
@@ -51,7 +69,11 @@ export default function Photo() {
         <img src={URL} />
       </div>
       <div>
-        <p>{explanation}</p>
+        <p>
+          <p class="innerP">{title}</p>
+          <p class="innerP">{date}</p>
+          {explanation}
+        </p>
       </div>
     </StyledPhoto>
   );
